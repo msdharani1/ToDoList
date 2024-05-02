@@ -36,7 +36,7 @@ section{
     height: 400px;
     width: 400px;
     padding-bottom: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     background-color: var(--secondary-color);
     border-radius: 10px;
     box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.3)70%;
@@ -113,8 +113,8 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 20px 0;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 0px;
     width: 100%;
 }
 footer h5{
