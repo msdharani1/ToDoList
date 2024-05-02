@@ -10,6 +10,10 @@ window.onload = () => {
     document.getElementById('month').innerHTML = currentDate.getMonth() + 1 + ':'; // Adding 1 to match usual month representation
     document.getElementById('year').innerHTML = currentDate.getFullYear();
 
+    document.getElementById('hours').innerHTML = currentDate.getHours() + ':';
+    document.getElementById('minutes').innerHTML = currentDate.getMinutes() + ':';
+    document.getElementById('sec').innerHTML = currentDate.getSeconds();
+
     todos = JSON.parse(localStorage.getItem('todos')) || [];
     todos.forEach(todo => addTodo(todo));
 }

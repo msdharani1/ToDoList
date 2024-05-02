@@ -67,11 +67,24 @@ section{
     border-radius: 7px;
     
 }
+.timedate{
+    display: flex;
+    gap: 10px;
+}
 #date{
     display: flex;
     gap: 1px;
 }
 #date h2{ 
+    margin-top: 10px;
+    font-size: small;
+    color: var(--accent-color-1);
+}
+#time{
+    display: flex;
+    gap: 1px;
+}
+#time h2{ 
     margin-top: 10px;
     font-size: small;
     color: var(--accent-color-1);
