@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list - MS Dharani</title>
+    <link rel="shortcut icon" href="images/icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h4>Click to <i class="fa-solid fa-circle-check" style="color: green;"></i> Complete</h4>
+            <h4>Double Click to <i class="fa-solid fa-circle-xmark" style="color:red;"></i> Delete</h4>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="heading">
+                <h1>To Do list</h1>
+            </div>
+            <div class="addForm">
+                <!-- <form action="" method="post"> -->
+                    <input type="text" name="name" placeholder="Enter here..." title="Enter your to do list name" id="input">
+                    <button title="Click to add" id="button">Add</button>
+                <!-- </form> -->
+            </div>
+            <div class="list" id="todolist">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h5>&copy; Made by <i class="fa-solid fa-heart" style="color: palevioletred;"></i> MS Dharani</h5>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
