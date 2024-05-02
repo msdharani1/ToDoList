@@ -47,6 +47,7 @@ section{
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    flex-direction: column;
 }
 .heading h1{
     color: var(--primary-color);
@@ -65,6 +66,15 @@ section{
     padding: 10px 20px;
     border-radius: 7px;
     
+}
+#date{
+    display: flex;
+    gap: 1px;
+}
+#date h2{ 
+    margin-top: 10px;
+    font-size: small;
+    color: var(--accent-color-1);
 }
 .addForm button{
     background-color: var(--primary-color);

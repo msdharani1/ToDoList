@@ -5,6 +5,11 @@ let input = document.getElementById("input");
 let todos = [];
 
 window.onload = () => {
+    let currentDate = new Date();
+    document.getElementById('dayname').innerHTML = currentDate.getDate() + ':';
+    document.getElementById('month').innerHTML = currentDate.getMonth() + 1 + ':'; // Adding 1 to match usual month representation
+    document.getElementById('year').innerHTML = currentDate.getFullYear();
+
     todos = JSON.parse(localStorage.getItem('todos')) || [];
     todos.forEach(todo => addTodo(todo));
 }
