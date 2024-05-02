@@ -4,7 +4,8 @@ let input = document.getElementById("input");
 
 let todos = [];
 
-window.onload = () => {
+// Function to update the time
+function updateTime() {
     let currentDate = new Date();
     document.getElementById('dayname').innerHTML = currentDate.getDate() + ':';
     document.getElementById('month').innerHTML = currentDate.getMonth() + 1 + ':'; // Adding 1 to match usual month representation
@@ -13,7 +14,13 @@ window.onload = () => {
     document.getElementById('hours').innerHTML = currentDate.getHours() + ':';
     document.getElementById('minutes').innerHTML = currentDate.getMinutes() + ':';
     document.getElementById('sec').innerHTML = currentDate.getSeconds();
+}
 
+// Call updateTime function initially and every second (1000 milliseconds)
+updateTime();
+setInterval(updateTime, 1000);
+
+window.onload = () => {
     todos = JSON.parse(localStorage.getItem('todos')) || [];
     todos.forEach(todo => addTodo(todo));
 }
